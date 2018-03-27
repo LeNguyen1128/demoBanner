@@ -1,0 +1,71 @@
+extends layout/layout
+
+block var
+  - scriptpage ="home";
+  - title = "Demo Basic Banner";
+
+block content
+    section.pageBanner1
+        .image-banner-demo
+            img(src="images/upload/banner.png")
+        .title-banner-demo
+            p Your Wealth Journey begins here.
+        .inner-bottom-text1
+            p.text-main-heading Let us help you.
+            p.text-sub-heading Are you?
+            .radio-group-select
+                .input-radio-select
+                    .btn-radio-select
+                        input(type="radio", name="type_customer", id="new_customer", checked)
+                    .btn-label-select New Customer
+                .input-radio-select
+                    .btn-radio-select
+                        input(type="radio",name="type_customer", id="existing_customer")
+                    .btn-label-select Existing
+            p.text-note-heading Note: An existing customer refers to a customer who has a least one savings / current account with Citibank Singapore.
+    section.tagSectionSubmit1
+        .tag-heading1
+            p I am interested to start a Citi Priority relationship
+        .tag-wrapper
+            .tag-contain
+                .tag-border1
+                    p Your personal particulars
+                    form.form-submit
+                        p Salutation
+                        .infor-wrapper1
+                            .saluation.item1
+                                .radio-group-select
+                                    .input-radio-select
+                                        .btn-radio-select
+                                            input(type="radio", id="dr", name="salutation", value="Dr")
+                                        .btn-label-select Dr
+                                    .input-radio-select
+                                        .btn-radio-select
+                                            input(type="radio", id="mr", name="salutation", value="Mr", checked)
+                                        .btn-label-select Mr
+                                    .input-radio-select
+                                        .btn-radio-select
+                                            input(type="radio", id="mrs", name="salutation", value="Mrs")
+                                        .btn-label-select Mrs
+                                    .input-radio-select
+                                        .btn-radio-select
+                                            input(type="radio", id="mdm", name="salutation", value="Mdm")
+                                        .btn-label-select Mdm
+                                    .input-radio-select
+                                        .btn-radio-select
+                                            input(type="radio", id="ms", name="salutation", value="Ms")
+                                        .btn-label-select Ms
+                            .name1.item1.item-half1
+                                input(type="text", id="nameSalutation", placeholder="Name")
+                            .contact1-number.item1.item-half1
+                                input(type="text", id="contactNumberSaluation", placeholder="Contact Number", maxlength="11")
+                            .passport1.item1.item-half1
+                                input(type="text", id="passportnumberSalutation", placeholder="NRIC/Passport Number")
+                            .email1.item1.item-half1
+                                input(type="text", id="emailAddressSalutation", placeholder="Email Address")
+                            .comment1.item1
+                                textarea
+                            .note-submit1
+                                p By clicking "Submit", you consent to Citibank Singapore Limited contacting you via the telephone. We'll get in touch with you within two business days.
+                            .btn-template1.cal-btn1
+                                button.button1 Submit

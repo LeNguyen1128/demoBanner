@@ -1,0 +1,603 @@
+//- extends layout to your side
+extends layout/layout
+
+block var
+  - scriptpage = "home";
+  - title = "Begin Your Wealth Journey with Citi Wealth Products – Citibank Priority";
+
+block content
+    section.pageBanner
+        .bannerImg
+            #contactUsImg
+                img(src="images/upload/banner.png", alt="Your Wealth Journey begins here.", title="Your Wealth Journey begins here.").visible-desktop
+        .innerText
+            .inner-border
+                p.page-title Your Wealth Journey begins here.
+        
+        .container.bottom-text
+            .inner-bottom-text
+                p.main-heading Let us help you.
+                p.sub-heading Are you?
+                .radio-group
+                    .inp-radio
+                        .radio-btn
+                            input(type="radio", name="kind_customer", id="new", checked)
+                        .radio-label New Customer
+                    .inp-radio
+                        .radio-btn
+                            input(type="radio", name="kind_customer", id="existing")
+                        .radio-label Existing Customer
+                p.note Note: An existing customer refers to a customer who has a least one savings / current account with Citibank Singapore.
+    section.section-content#new-customer
+        .section-tabs
+            .tabs-heading.visible-desktop
+                ul
+                    li.active#wel(data-id="wel", data-click) Welcome Offer
+                    li#interest(data-id="interest", data-click) 2% p.a interest
+                    li#cash(data-id="cash", data-click) S$750  cash reward
+                    li#benefits(data-id="benefits", data-click) Benefits
+                    li#faq(data-id="faq", data-click) FAQs
+            .tabs-wrapper
+                .tab-welcome#wel-tab.active
+                    //- .tab-heading.visible-phone Welcome Offer
+                    .tab-contain
+                        .tab-border
+                            p Enjoy up to 2%* p.a. interest  rate OR S$7503 cash reward when you start a Citi Priority relationship  with fresh funds of S70,000.
+                            .square-group
+                                .square-item
+                                    p.title-box.bold Option 1:
+                                    p
+                                        | Get 
+                                        strong 2%* p.a. 
+                                        | interest rate with the 
+                                        strong Citi MaxiGain Savings Account.
+                                    .find-more(data-click,data-id="interest")
+                                        button.button Find Out More
+                                .break-text-mid OR
+                                .square-item
+                                    p.title-box.bold Option 2:
+                                    p
+                                        | Get 
+                                        strong S$750^
+                                        br
+                                        | cash reward.
+                                    .find-more(data-click,data-id="cash")
+                                        button.button Find Out More
+                            .tnc
+                                .tnc-border
+                                    p.bold Terms and Conditions Apply
+                                    p
+                                        | *For more information on Citi MaxiGain Savings Account, click 
+                                        a(href="https://www.citibank.com.sg/gcb/deposits/pdf/MaxiGainTnC.pdf", target="_blank") here
+                                    p
+                                        | ^For more information on Citi Priority Welcome Programme 2018, click 
+                                        a(href="https://www.citibank.com.sg/global_docs/pdf/CP_Welcome_Programme1.pdf", target="_blank") here
+                .tab-interest#interest-tab
+                    //- .tab-heading.visible-phone Welcome Offer
+                    .tab-contain
+                        .tab-border
+                            p.bold Get 2%* p.a. on your savings with Citi MaxiGainSavings Account
+                            .box-dashed
+                                .box-dashed-border
+                                    .item
+                                        .img
+                                            img(src="images/upload/ico-chart.png", alt="Chart Icon")
+                                        p.big-text
+                                            | 0.8%
+                                            sup #
+                                            span p.a.
+                                        p.medium-text.bold Base Interest
+                                        p (80%* of 1-month SIBOR)
+                                    .item
+                                        p.big-text +
+                                    .item
+                                        .img
+                                            img(src="images/upload/ico-calendar.png", alt="Calendar Icon")
+                                        p.big-text
+                                            | 1.2%
+                                            sup ^
+                                            span p.a.
+                                        p.medium-text.bold Bonus Interest
+                                        p (0.1% p.a. x 12 Countesrs)
+                                    .item
+                                        p.big-text =
+                                    .item
+                                        .box-large
+                                            p.big-text
+                                                | 2%
+                                                sup *
+                                                span p.a.
+                                            p.medium-text.bold Interest Rate
+                            p.bold Earn Base Interest:
+                                ul.disc
+                                    li 80% of the 1-month Singapore Dollar Interbank Offer Rate (1-month SIBOR)
+                            p.bold Earn Bonus Interest:
+                                ul.disc
+                                    li Bonus interest rate that steps up each month
+                                    li Starting from 0.1% p.a. to a maximum of 1.2% p.a.
+                            .table
+                                .table-heading
+                                    .col.col-head
+                                        p Base Rate# (p.a.)
+                                    .col.col-head
+                                        p Bonus Rate^ (p.a.)
+                                    .col.col-head
+                                        p Total Interest Rate* (p.a.)
+                                .table-body
+                                    .col
+                                        p.big-text
+                                            | 0.8%
+                                            sup #
+                                    .col
+                                        .sub-row
+                                            .col-left
+                                                p Counter 1
+                                            .col-right
+                                                p 0.1%
+                                        .sub-row
+                                            .col-left
+                                                p Counter 2
+                                            .col-right
+                                                p 0.2%
+                                        .sub-row
+                                            .col-left
+                                                p Counter 3
+                                            .col-right
+                                                p 0.3%
+                                        .sub-row
+                                            p to
+                                        .sub-row
+                                            .col-left
+                                                p Counter 11
+                                            .col-right
+                                                p 1.1%
+                                        .sub-row
+                                            .col-left
+                                                p Counter 12
+                                            .col-right
+                                                p 1.2%
+                                    .col
+                                        .sub-row
+                                            p 0.9%
+                                        .sub-row
+                                            p 1.0%
+                                        .sub-row
+                                            p 1.1%
+                                        .sub-row
+                                            p to
+                                        .sub-row
+                                            p 1.9%
+                                        .sub-row
+                                            p 2.0%
+                            .btn-template.cal-btn
+                                button.button Calculate Your Interest Here
+                            .tnc
+                                .tnc-border
+                                    p
+                                        | Click 
+                                        a(href="https://www.citibank.com.sg/gcb/landing_page/deposits/pdf/MaxiGainTnC.pdf", target="_blank") here 
+                                        | for the full terms and conditions.
+                                    p.pagraph #For illustration purposes, we have provided in this marketing material that the 1-month SIBOR is 1% p.a. therefore, the base interest rate set out in this marketing material is 0.8% p.a. based on the 1-month SIBOR of 1% p.a. The base interest rate will fluctuate daily in accordance with the movement of the 1-month SIBOR. The base interest rate will be paid on the first S$150,000 in the daily balance of your Citi MaxiGain Savings Account ("MaxiGain account"). You need to maintain a daily end of day balance of at least S$10,000 in your MaxiGain account to earn base interest.
+                                    p.pagraph ^You shall accrue bonus interest at a rate ("Bonus Interest Rate") that steps up each month,from 0.1% p.a. to a maximum of 1.2% p.a., calculated based on your lowest balance in the previous month, if the lowest balance in your MaxiGain account in a month is equal to or greater than the lowest balance in the previous month. The lowest amount of funds in your MaxiGain account at any point in time in a month shall be the "lowest balance" of that month. The "Counter" increases by 1 each time the Bonus Interest Rate steps up.
+                                    p.pagraph *By fulfilling the necessary conditions, you can achieve 2% interest p.a. (0.8%# base + 1.2% p.a. bonus) from the 13th month onwards. For clarity, the 0.8%# interest p.a. is applicable on the daily balance and 1.2% interest p.a. is applicable on the lowest balance in the previous month provided the necessary conditions are fulfilled.
+                                    p.pagraph
+                                        sup 1
+                                        | First cheque book issued upon account opening is free. Thereafter, issuance of each subsequent cheque book is charged at S$15.
+                                    p.bold Deposit Insurance Scheme:
+                                    p.pagraph Singapore dollar deposits of non-bank depositors are insured by the Singapore Deposit Insurance Corporation, for up to S$50,000 in aggregate per depositor per Scheme member by law. Foreign currency deposits, dual currency investments, structured deposits and other investment products are not insured. For more information, please visit www.sdic.org.sg.
+                                    p Citibank full disclaimers, terms and conditions apply to individual products and banking services.
+                .tab-cash#cash-tab
+                    .tab-contain
+                        .tab-border
+                            p.bold Receive S$7501 when you start a Citi Priority relationship today
+                            p Start with minimum investible assets of S$100,000 and be rewarded with additional cash when you invest or insure with us
+                            .table-cash
+                                .cash-item
+                                    .item-border
+                                        .cash-top
+                                            p Fund in S$1000,000
+                                        .cash-bottom
+                                            p S$300
+                                            p Cash
+                                .cash-item.plus-operation
+                                    p.big-text +
+                                .cash-item
+                                    .item-border
+                                        .cash-top
+                                            p Transfer-in Investments of S$50,000
+                                        .cash-bottom
+                                            p S$150
+                                            p Cash
+                                .cash-item.plus-operation
+                                    p.big-text +
+                                .cash-item
+                                    .item-border
+                                        .cash-top
+                                            p Investment AND insurance purchase of S$50,000
+                                        .cash-bottom
+                                            p S$300
+                                            p Cash
+                            .total
+                                p Total additional cash of
+                                p.big-text
+                                    | S$750
+                                    sup 1
+                            .btn-template.see-popup-btn
+                                a(href="#popup").button See How Cash Rewards Adds Up
+                            #popup.overlay
+                                .popup
+                                    a.close(href="#") X
+                                    .popup-wrapper
+                                        .heading
+                                            p 2018 CITI PRIORITY WELCOME REWARD (SGD)
+                                        .content
+                                            .content-border
+                                                .table-head.popup-table
+                                                    .table-item.item-1
+                                                        p Funding Amount (SGD)
+                                                    .table-item.item-2
+                                                        p Base Reward (SGD)
+                                                    .table-item.item-3
+                                                        p (A)
+                                                        p Investment Transfer-in (SGD)
+                                                    .table-item.large.item-4
+                                                        p (B)
+                                                        p Investment Purchase (SGD) Accumulated purchase from AO month up till Dec 2018
+                                                    .table-item.large.item-5
+                                                        p (C)
+                                                        p Insurance Purchase (SGD) Accumulated purchase from AO month up till Dec 2018
+                                                .table-detail.popup-table
+                                                    .table-item.item-1
+                                                        p ≥ 50,000
+                                                        p ≥ 70,000
+                                                        p ≥ 100,000
+                                                        p ≥ 250,000
+                                                        p ≥ 500,000
+                                                        p ≥ 1,000,000
+                                                        p ≥ 1,500,000
+                                                        p ≥ 3,000,000
+                                                    .table-item.item-2
+                                                        p N.A
+                                                        p 250
+                                                        p 300
+                                                        p 300
+                                                        p 300
+                                                        p 300
+                                                        p 300
+                                                        p 300
+                                                    .table-item.item-3
+                                                        p 50
+                                                        p 100
+                                                        p 150
+                                                        p 375
+                                                        p 750
+                                                        p 1,500
+                                                        p 2,250
+                                                        p 4,000
+                                                    .table-item.large.item-4
+                                                        p 150
+                                                        p 150
+                                                        p 300
+                                                        p 750
+                                                        p 1,500
+                                                        p 3,000
+                                                        p 4,500
+                                                        p 10,000
+                                                    .table-item.large.item-5
+                                                        p 150
+                                                        p 150
+                                                        p 300
+                                                        p 750
+                                                        p 1,500
+                                                        p 3,000
+                                                        p 4,500
+                                                        p 10,000
+
+                            .tnc
+                                .tnc-border
+                                    p Terms and Conditions
+                                    p
+                                        sup 1
+                                        | With S$100,000 of New Funds and transfer-in of eligible unit trusts, shares or bonds, and purchase of S$50,000 eligible investment products and S$50,000 eligible insurance products. This program is not applicable to Citi MaxiGain customers. For full terms and conditions, click 
+                                        a(href="https://www.citibank.com.sg/global_docs/pdf/CP_Welcome_Programme1.pdf", target="_blank") here
+                .tab-benefits#benefits-tab
+                    .tab-contain
+                        .tab-border
+                            p Benefits as a Citi Priority Client:
+                            p.bold Personalised Access and Services
+                            ul.disc
+                                li Priority queue at branches and when you call our Citi Phone Priority Service.
+                                li Access Citi’s enhanced digital trading platform, professional advisory and insights, and customized product bundles, which will help you to achieve your financial planning goals.
+                            p.bold Global Banking
+                            ul.disc
+                                li Free Citibank ATM withdrawals* in over 20 countries.
+                                li Emergency cash of up to US$5,000  from your account at any Citi branch worldwide.
+                                li Free and instant online fund transfers with a maximum daily outgoing limit of US$50,000^  from your Citibank account to Citibank accounts anywhere via Citibank Global Transfer.
+                                li +Prevailing foreign currency exchange rates apply.
+                                li ^Fund transfer here refers to Citibank Global Transfer via Citibank Online. Available in participating countries with no processing fee. Standard foreign currency exchange rates apply. Subject to a maximum daily outgoing limit of S$65,000. Depending on the country where the funds are being remitted to, a lower limit may apply.
+                            .tnc
+                                .tnc-border
+                                    p Terms and Conditions
+                                    p +Prevailing foreign currency exchange rates apply.
+                                    p ^Fund transfer here refers to Citibank Global Transfer via Citibank Online. Available in participating countries with no processing fee. Standard foreign currency exchange rates apply. Subject to a maximum daily outgoing limit of S$65,000. Depending on the country where the funds are being remitted to, a lower limit may apply.
+                .tab-faq#faq-tab
+                    .tab-contain
+                        .tab-border
+                            p.bold Citi MaxiGain Savings Account
+                            .faq-wrapper
+                                .element-item
+                                    .ele-question
+                                        p What interest will I earn on the Citi MaxiGain Savings Account?
+                                    .ele-anwser
+                                        p.pagraph You will earn base interest and bonus interest on your Citi MaxiGain Savings Account (&quot;MaxiGain account&quot;) if certain criteria are met.
+                                .element-item
+                                    .ele-question
+                                        p How is base interest calculated?
+                                    .ele-anwser
+                                        p.pagraph The Bank shall pay you a base interest rate (&quot;Base Interest Rate&quot;) at 80% of the 1 month Singapore Dollar Singapore Interbank Offer Rate (&quot;1 month SIBOR&quot;) on your daily balance, up to the first S$150,000 in your MaxiGain account. For example, if 1 month SIBOR is 1% p.a., the Base Interest Rate shall be 0.8% p.a.
+                                        p.pagraph The 1 month SIBOR for December 2015 was 0.972% p.a. for your reference. If the 1 month SIBOR is 0% p.a. or lower, the Base Interest Rate shall be zero.
+                                        p A Base Interest Rate of 0.05% p.a. shall apply to balances in your MaxiGain account in excess of S$150,000.
+                                .element-item
+                                    .ele-question
+                                        p How is bonus interest calculated?
+                                    .ele-anwser
+                                        p.pagraph Your account balance shall accrue bonus interest at a rate (&quot;Bonus Interest Rate&quot;) that steps up each month, from 0.10% p.a. to a maximum of 1.20% p.a. A bonus counter (&quot;Counter&quot;) is a numerical representation of your &quot;bonus level&quot; on the MaxiGain account. The Counter ranges from &quot;0&quot; to &quot;12&quot;, representing the corresponding Bonus Interest Rate from 0.00% p.a. to 1.20% p.a.
+                                        p.pagraph The Counter increases by 1 each time the Bonus Interest Rate steps up. The Bonus Interest Rate steps up in a month if the lowest balance in that month is equal to or greater than the lowest balance in the preceding month. Bonus interest is computed based on the preceding month&#39;s lowest balance and number of calendar days in the preceding month. The lowest amount of funds in your MaxiGain account at any point in time in a month shall be the &quot;lowest balance&quot; of that month.
+                                        p Please see the table below for illustration:
+                                        table
+                                            tbody
+                                                tr.whiteBg
+                                                    td
+                                                    td.txtCenter
+                                                        strong Month 1
+                                                    td.txtCenter
+                                                        strong Month 2
+                                                    td.txtCenter
+                                                        strong Month 3
+                                                tr.whiteBg
+                                                    td Lowest Balance
+                                                    td S$30,000
+                                                    td S$40,000
+                                                    td S$50,000
+                                                tr.whiteBg
+                                                    td Number of days in month
+                                                    td 28
+                                                    td 31
+                                                    td 30
+                                                tr.whiteBg
+                                                    td Counter
+                                                    td 0
+                                                    td 1
+                                                    td 2
+                                                tr.whiteBg
+                                                    td Bonus Interest Rate
+                                                    td 0
+                                                    td 0.10% p.a.
+                                                    td 0.20% p.a.
+                                                tr.whiteBg
+                                                    td Bonus interest
+                                                    td N.A
+                                                    td S$30,000 x 0.10% x 28/365 = S$2.30
+                                                    td $40,000 x 0.20% x 31/365 = $6.79
+                                .element-item
+                                    .ele-question
+                                        p Are there requirements for interests to be earned?
+                                    .ele-anwser
+                                        p.pagraph Yes, the Base Interest Rate applies if your MaxiGain account has a minimum balance of S$10,000. In other words, base interest accrues on a day where the account balance for that day is at least S$10,000. Conversely, no base interest shall accrue on a day where the account balance for that day falls below S$10,000.
+                                        p.pagraph The Bonus Interest Rate on the other hand has no requirement of a minimum balance . Bonus interest will accrue in a month at the relevant Bonus Interest Rate for so long as the Counter for that month is higher than zero.
+                                        table
+                                            tbody
+                                                tr.whiteBg
+                                                    td
+                                                        strong MaxiGain Account Balance
+                                                    td
+                                                        strong Base Interest
+                                                    td
+                                                        strong Bonus Interest
+                                                tr.whiteBg
+                                                    td S$0 to S$150,000
+                                                    td 80% of 1 month SIBOR
+                                                    td(rowspan='2') Up to 1.20% p.a., depending on the Counter 
+                                                tr.whiteBg
+                                                    td Above S$150,000
+                                                    td 0.05% p.a.
+                                                tr.whiteBg
+                                                    td Conditions
+                                                    td Only applicable if the daily account balance is at least S$10,000
+                                                    td
+                                                        p No minimum or maximum balance requirement for bonus interest
+                                                        p.last Counter must be higher than zero
+                                .element-item
+                                    .ele-question
+                                        p What happens if my lowest balance this month is lower than the lowest balance in the previous month?
+                                    .ele-anwser
+                                        p If your lowest balance in the current month is lower than the lowest balance in the preceding month, the
+                                        p.pagraph Counter will reset as follows:
+                                        table
+                                            tbody
+                                                tr.whiteBg
+                                                    td
+                                                        strong Counter in the Preceding Month
+                                                    td
+                                                        strong Counter in the Current Month
+                                                tr.whiteBg
+                                                    td 0-5
+                                                    td 0
+                                                tr.whiteBg
+                                                    td 6-12
+                                                    td 6
+                                .element-item
+                                    .ele-question
+                                        p What happens if my lowest balance this month is lower than the lowest balance in the previous month?
+                                    .ele-anwser
+                                        p.pagraph You will receive your base interest on the last day of a month, starting as early as 29 February 2016, for so long as you meet the minimum balance of S$10,000. You will receive your bonus interest on the last day of March 2016, provided the lowest balance in March 2016 is equal to or greater than the lowest balance in February 2016.
+                                .element-item
+                                    .ele-question
+                                        p Where can I find the latest SIBOR rates?
+                                    .ele-anwser
+                                        p.pagraph
+                                            | You can visit the website: 
+                                            a(href="http://www.abs.org.sg/rates_sibor.php", target="_blank") http://www.abs.org.sg/rates_sibor.php 
+                                            | for updated SIBOR rates.
+
+
+        .break-mid-line
+        .section-submit
+            .tabs-heading
+                p I am interested to start a Citi Priority relationship
+            .tab-wrapper
+                .tab-sumit
+                    .tab-contain
+                        .tab-border
+                            p Your personal particulars
+                            form.form-submit
+                                p Salutation
+                                .infor-wrapper
+                                    .saluation.item
+                                        .radio-group
+                                            .inp-radio
+                                                .radio-btn
+                                                    input(type="radio", name="salutation", id="dr", value="dr")
+                                                .radio-label Dr
+                                            .inp-radio
+                                                .radio-btn
+                                                    input(type="radio", name="salutation", id="mr", value="mr", checked)
+                                                .radio-label Mr
+                                            .inp-radio
+                                                .radio-btn
+                                                    input(type="radio", name="salutation", id="mrs", value="mrs")
+                                                .radio-label Mrs
+                                            .inp-radio
+                                                .radio-btn
+                                                    input(type="radio", name="salutation", id="mdm", value="mdm")
+                                                .radio-label Mdm
+                                            .inp-radio
+                                                .radio-btn
+                                                    input(type="radio", name="salutation", id="ms", value="ms")
+                                                .radio-label Ms
+                                    .name.item.item-half
+                                        input(type="text", placeholder="Name")
+                                    .contact-number.item.item-half
+                                        input(type="text", placeholder="Contact Number", maxlength="11")
+                                    .passport.item.item-half
+                                        input(type="text", placeholder="NRIC/Passport Number")
+                                    .email.item.item-half
+                                        input(type="text", placeholder="Email Address")
+                                    .comment.item
+                                        textarea
+                                .note-submit
+                                    p By clicking "Submit", you consent to Citibank Singapore Limited contacting you via the telephone. We'll get in touch with you within two business days.
+                                .btn-template.cal-btn
+                                    button.button Submit
+
+
+
+
+    section.section-content#existing-customer
+        .section-exst   
+            .tabs-heading
+                p Lastest Promotions
+            .tab-wrapper
+                .tab-promotion
+                    .tab-contain
+                        .tab-border
+                            p Refer a friend or family and get rewarded
+                            ul.disc
+                                li Get up to cash reward# for topping up your balances with Citi Priority
+                            .btn-template
+                                a(href="https://www.citibank.com.sg/citigold/banking-privileges/member-get-member/client-page.htm", target="_blank").button Refer Now
+                            .note
+                                p *Full Terms and conditions apply
+                            .break-line-dashed
+                            p New Funds promotions
+                            ul.disc
+                                li Get up to S$1,000* when you refer your friends or family to start a wealth relationship with Citi.
+                                li Earn more cash bonuses by simply transferring in your investment holdings or growing your wealth with investment or insurance. 
+                            .btn-template
+                                a(href="http://citibank.com.sg/citi-priority/bank-privileges-promotions/welcome-offers/index.htm", target="_blank").button Find Out More   
+                            .note
+                                p *Full Terms and conditions apply
+
+
+
+
+        .break-mid-line
+        .section-submit
+            .tabs-heading
+                p I am interested to start a Citi Priority relationship
+            .tab-wrapper
+                .tab-sumit
+                    .tab-contain
+                        .tab-border
+                            p Tell us which product(s) you are interested in.
+                            .checkbox-group
+                                .inp-checkbox
+                                    .checkbox-btn
+                                        input(type="checkbox", value="Brokerage")
+                                        .checkbox-label Brokerage (Equity Trading)
+                                .inp-checkbox
+                                    .checkbox-btn
+                                        input(type="checkbox", value="Unit Trust")
+                                        .checkbox-label Unit Trust
+                                .inp-checkbox
+                                    .checkbox-btn
+                                        input(type="checkbox", value="Foreign Currency")
+                                        .checkbox-label Foreign Currency 
+                                .inp-checkbox
+                                    .checkbox-btn
+                                        input(type="checkbox", value="Insurance")
+                                        .checkbox-label Insurance
+                                .inp-checkbox
+                                    .checkbox-btn
+                                        input(type="checkbox", value="Bonds and Structured Products")
+                                        .checkbox-label Bonds and Structured Products 
+                                .inp-checkbox
+                                    .checkbox-btn
+                                        input(type="checkbox", value="Deposits")
+                                        .checkbox-label Deposits
+
+                            p Your personal particulars
+                            form.form-submit
+                                p Salutation
+                                .infor-wrapper
+                                    .saluation.item
+                                        .radio-group
+                                            .inp-radio
+                                                .radio-btn
+                                                    input(type="radio", name="salutation", id="dr", value="dr")
+                                                .radio-label Dr
+                                            .inp-radio
+                                                .radio-btn
+                                                    input(type="radio", name="salutation", id="mr", value="mr", checked)
+                                                .radio-label Mr
+                                            .inp-radio
+                                                .radio-btn
+                                                    input(type="radio", name="salutation", id="mrs", value="mrs")
+                                                .radio-label Mrs
+                                            .inp-radio
+                                                .radio-btn
+                                                    input(type="radio", name="salutation", id="mdm", value="mdm")
+                                                .radio-label Mdm
+                                            .inp-radio
+                                                .radio-btn
+                                                    input(type="radio", name="salutation", id="ms", value="ms")
+                                                .radio-label Ms
+                                    .name.item.item-half
+                                        input(type="text", placeholder="Name")
+                                    .contact-number.item.item-half
+                                        input(type="text", placeholder="Contact Number", maxlength="11")
+                                    .passport.item.item-half
+                                        input(type="text", placeholder="NRIC/Passport Number")
+                                    .email.item.item-half
+                                        input(type="text", placeholder="Email Address")
+                                    .comment.item
+                                        textarea
+                                .note-submit
+                                    p By clicking "Submit", you consent to Citibank Singapore Limited contacting you via the telephone. We'll get in touch with you within two business days.
+                                .btn-template.cal-btn
+                                    button.button Submit
+
+
+
+                    
+

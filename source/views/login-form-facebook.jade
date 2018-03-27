@@ -1,0 +1,24 @@
+extends layout/layout
+
+block var
+  - scriptpage ="home";
+  - title = "Demo Login Form Facebook";
+
+block content
+    .content-wrapper-form-login
+        .wrapper-form-login
+            p Địa chỉ email của bạn là gì?
+            .input-form
+                input
+            .button-continue
+                button Tiếp tục
+            .button-usephone
+                button Dùng số điện thoại của bạn
+
+            .link-signup
+                a(href="#", target="blank") Bạn đã có tài khoản chưa?
+        .wrapper-signup-help
+            .link-signup-facebook 
+                a(href="#", target="blank") Đăng ký Facebook
+            .link-support-facebook 
+                a(href="#", target="blank") Bạn cần trợ giúp?

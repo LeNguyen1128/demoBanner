@@ -1,0 +1,54 @@
+include ../mixin/common
+//-variable
+block var
+- var title = (typeof(title) === 'undefined' || title == "") ? "Splash Jade template" : title;
+- var scriptpage;
+- var subPage = (typeof(subPage) === 'undefined' || subPage == "") ? "" : subPage;
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='format-detection', content='telephone=no')
+    <!--[if IE]>
+    <link rel="shortcut icon" href="path/to/favicon.ico"/>
+    <![endif]-->
+    link(href='images/apple-touch-icon-precomposed.png',rel='apple-touch-icon-precomposed')
+    link(href='images/favicon.png',rel='icon')
+    meta(name='description', content='Begin your successful wealth journey with Citi Priority and be rewarded with welcome cash when you start a Citi relationship today. Apply &amp; Enjoy with rewards.')
+    meta(name='keywords', content='citigold priority, wealth products, wealth journey, citi products')
+    meta(name='author', content='')
+    title=title
+    link(href='css/bootstrap.min.css', rel='stylesheet', media='screen')
+    link(href='css/slick.css', rel='stylesheet', media='screen')
+    link(href='css/style.css', rel='stylesheet', media='screen')
+
+    <!--[if lt IE 9]>
+    script(type="text/javascript", src="js/libs/html5shiv.min.js")
+    script(type="text/javascript", src="js/libs/respond.min.js")
+    <![endif]-->
+    script(defer src="https://use.fontawesome.com/releases/[VERSION]/js/all.js")
+    script(defer src="https://use.fontawesome.com/releases/[VERSION]/js/v4-shims.js")
+    
+  body(class=subPage)
+    .wrapper
+        //- include header
+        //include ../includes/header
+        #main
+            block content
+        //- include footer
+        //include ../includes/footer
+
+
+    //- Include all compiled plugins (below), or include individual files as needed
+    script(src="js/libs/jquery.min.js")
+    script(src="js/libs/bootstrap.min.js")
+    script(src="js/libs/slick.min.js")
+    script(src='js/libs/plugins.min.js')
+    script(src='js/main.js')
+    //- script(src='js/home.js')
+    if(scriptpage!== undefined && scriptpage !== "" && scriptpage!==null)
+      script(src='js/' + scriptpage +'.js')

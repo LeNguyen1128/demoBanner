@@ -1,0 +1,554 @@
+/*reset CSS*/
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+
+//
+html, body {
+	font-family: 'interstate-light';
+}
+
+p {
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+}
+
+ul.disc {
+	list-style-type: disc;
+	padding-left: 20px;
+}
+
+//display none tempppp
+#wel-tab,#interest-tab,#cash-tab,#benefits-tab,#faq-tab{
+	display: none;
+}
+#wel-tab,#interest-tab,#cash-tab,#benefits-tab,#faq-tab {
+	&.active {
+		display: block;
+	}
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.pagraph {
+	padding-bottom: 20px;
+}
+
+.title-box {
+	padding: 10px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.text-right {
+	text-align: right;
+}
+.pull-right {
+    float: right !important;
+}
+.copyright {
+	padding: 20px 10px;
+}
+.container {
+	width: 1480px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#footer {
+	background-color: #333333;
+	color: #fff;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.top-header {
+	height: 26px;
+	background-color: #333;
+}
+
+.banner-header {
+	background-color: #0F2A48;
+	height: 70px;
+}
+
+.pageBanner {
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.logoWrapper {
+	padding: 20px 0 0;
+}
+.innerText {
+	position: absolute;
+	bottom: 40%;
+	width: 100%;
+}
+.inner-border {
+	width: 59%;
+	max-width: 840px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	background-color: #fff;
+	color: #333;
+	font-size: 30px;
+	padding: 0 40px;
+}
+.page-title {
+	padding: 20px 40px;
+	font-size: 68px;
+	line-height: 76px;
+}
+
+.bottom-text {
+	position: absolute;
+    z-index: 1;
+    background: #fff;
+    bottom: -15%;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-align: center;
+}
+
+.main-heading {
+	font-size: 42px;
+}
+.sub-heading {
+	font-size: 32px;
+}
+.inp-radio {
+	display: inline-block;
+	margin-right: 30px;
+	.radio-btn, .radio-label {
+		display: inline-block;
+	}
+	.radio-btn {
+		padding-right: 15px;
+	}
+}
+
+.section-content {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	font-size: 0;
+	vertical-align: top;
+}
+
+.section-tabs, .section-submit, .section-exst {
+ 	display: inline-block;
+ 	font-size: 20px;
+ 	width: 49%;
+ 	vertical-align: top;
+}
+.break-mid-line {
+	display: inline-block;
+	width: 2px;
+	height: 500px;
+	background-color: #333;
+	margin: 0 8px;
+}
+
+.tab-contain {
+	border-left: 1px solid #333;
+	border-right: 1.5px solid #ccc;
+	border-bottom: 1.5px solid #ccc;
+	margin-bottom: 30px;
+}
+
+.tabs-heading {
+	background-color: #162a46;
+	color: #fff;
+	padding: 10px 10px;
+	font-size: 0;
+	text-align: center;
+	li {
+		cursor: pointer;
+		display: inline-block;
+		width: 20%;
+		font-size: 20px;
+	}
+
+	li.active {
+		position: relative;
+	}
+ 
+	li.active:after {
+		position: absolute;
+		content: "";
+		bottom: -10px;
+		height: 5px;
+		width: 60%;
+		left: 50%;
+		transform: translate(-50%,0);
+		background-color: #69cce6;
+	}
+
+	p {
+		font-size: 20px;
+	}
+}
+
+.tab-border {
+	padding: 15px;
+}
+
+.square-group {
+	display: table;
+	font-size: 0;
+}
+
+.break-text-mid {
+	display: inline-block;
+	margin: 0 5px;
+	font-size: 20px;
+}
+.square-item {
+	display: table-cell;
+	width: 45%;
+	border-radius: 6px;
+	border: 1px dashed #333;
+	padding: 15px;
+	position: relative;
+	text-align: center;
+}
+
+.find-more {
+	width: 80%;
+	margin: 0 auto;
+	background-color: #162a46;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 20px;
+	cursor: pointer;
+	.button {
+		background-color: #162a46;
+		color: #fff;
+		border: none;
+	}
+}
+
+.tnc {
+	margin-top: 30px;
+	border: 1px solid #ccc;
+	color: #8c8c8c;
+	a {
+		color: #8c8c8c;
+	}
+	.tnc-border {
+		padding: 15px 15px 50px 15px;
+	}
+}
+
+.box-dashed {
+	border: 1px dashed #162a46;
+	.box-dashed-border {
+		padding: 15px;
+	}
+	.item {
+		display: inline-block;
+		// width: 33.333%;
+		color: #162a46;
+		vertical-align: top;
+	}
+	.img {
+		width: 50px;
+		height: 50px;
+	}
+}
+.big-text {
+	font-size: 200%;
+	span {
+		font-size: 50%;
+	}
+}
+.medium-text {
+	font-size: 120%;
+}
+
+.box-large {
+	background-color: #162a46;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.btn-template {
+	width: 40%;
+	.button {
+		width: 100%;
+		padding: 10px;
+		background-color: #162a46;
+		color: #fff;
+		border: none;
+		border-radius: 5px;
+	}
+	a {
+		display: block;
+		text-align: center;
+	}
+}
+.table {
+	width: 100%;
+	display: block;
+	text-align: center;
+	border: 1px solid #333;
+	border-radius: 5px;
+}
+
+.col {
+	width: 33.3333%;
+	display: inline-block;
+}
+
+.table-heading {
+	background-color: #162a46;
+	color: #fff;
+	font-size: 0;
+	padding: 10px;
+}
+
+.col-head {
+	// display: inline-block;
+	font-size: 20px;
+	
+}
+.sub-row {
+	display: block;
+	width: 100%;
+	font-size: 0;
+	.col-left,.col-right {
+		display: inline-block;
+		width: 49%;
+	}
+}
+
+.table-body {
+	display: table;
+	width: 100%;
+	.col {
+		display: table-cell;
+		width: 33.3333%;
+	}
+}
+
+.table-cash {
+	display: table;
+	width: 100%;
+	text-align: center;
+	.cash-item {
+		display: table-cell;
+		width: 27%;
+		border: 1px solid #333;
+		&.plus-operation {
+			width: 9.5%;
+			border: none;
+		}
+	}
+}
+
+.cash-top {
+	background-color: #162a46;
+	color: #fff;
+	padding: 50px 30px;
+}
+
+.total {
+	margin-top: 50px;
+	background-color:#162a46;
+	color: #fff;
+	text-align: center;
+	padding: 15px 0 10px 0;
+	position: relative;
+	margin-bottom: 30px;
+}
+.total:after {
+	position: absolute;
+	content: "";
+	width: 0; 
+	height: 0; 
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;  
+	border-bottom: 15px solid #162a46;
+	top: -15px;
+
+}
+.see-popup-btn {
+	margin: 0 auto;
+}
+
+.element-item {
+	margin-bottom: 15px;
+	table {
+		border-right: 1px solid #CCCCCC;
+	    border-top: 1px solid #CCCCCC;
+	    width: 100%;
+	    border-bottom: 1px solid #CCCCCC;
+	    position: relative;
+	    box-shadow: 2px 2px 4px #cccccc;
+	    td {
+	    	padding: 10px;
+			border-bottom: 1px solid #CCCCCC;
+   			border-left: 1px solid #CCCCCC;
+	    }
+	}
+}
+
+.ele-question {
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+	position: relative;
+	cursor: pointer;
+}
+
+.ele-question:after {
+	position: absolute;
+	content: "+";
+	right: 0;
+	top: 0;
+	font-size: 20px;
+}
+
+.ele-anwser {
+	display: none;
+}
+
+.element-item.open {
+	.ele-anwser {
+		display: block;
+	}
+	.ele-question {
+		font-weight: normal;
+	}
+	.ele-question:after {
+		content: "-";
+	}
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  background: #fff;
+  border-radius: 11px;
+  width: 60%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 20px;
+  color: #fff;
+  opacity: 1;
+  text-shadow: none;
+}
+
+.popup {
+	text-align: center;
+	.heading {
+		background-color: #162a46;
+		color: #fff;
+		text-align: center;
+		padding: 20px 0;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+}
+
+.popup-table {
+	display: block;
+	width: 100%;
+	font-size: 0;
+	.table-item {
+		display: inline-block;
+		width: 18%;
+		font-size: 20px;
+		vertical-align: top;
+		&.large {
+			width: 23%;
+		}
+	}
+	&.table-head {
+		background-color: #f6f6f6;
+	}
+	&.table-detail {
+		padding-bottom: 20px;
+	}
+
+}
+.break-line-dashed {
+	height: 1px;
+	border: 1px dashed #333;
+}
+
+/////form
+
+.infor-wrapper {
+	display: block;
+	width: 100%;
+	// font-size: 0;
+	.item-half {
+		display: inline-block;
+		width: 49%;
+	}
+
+	textarea,input[type="text"], input[type="number"]{
+		width: 100%;
+		padding: 10px;
+		border-radius: 5px;
+		border: 1px solid #f6f6f6;
+		background-color: #f6f6f6;
+	}
+	.item {
+		margin-bottom: 15px;
+	}
+}
+
+.checkbox-group {
+	display: block;
+	width: 100%;
+	font-size: 0;
+	.inp-checkbox {
+		display: inline-block;
+		width: 33%;
+		font-size: 18px;
+		input, .checkbox-label {
+			display: inline-block;
+		}
+	}
+
+}
+
+/*End reset CSS*/
+
+
